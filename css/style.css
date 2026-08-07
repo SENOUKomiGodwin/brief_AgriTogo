@@ -1,0 +1,617 @@
+/* ==========================================================================
+   1. RESET & VARIABLES GLOBALES
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #1b5e20;      /* Vert foncé principal */
+    --secondary-color: #2e7d32;    /* Vert moyen */
+    --accent-color: #fbc02d;       /* Jaune / Or */
+    --bg-light: #f8f9fa;           /* Fond clair */
+    --bg-card: #ffffff;            /* Fond de carte */
+    --text-color: #212529;         /* Texte sombre */
+    --text-muted: #6c757d;        /* Texte secondaire */
+    --border-color: #e0e0e0;      /* Bordures subtiles */
+    --radius: 12px;                /* Coins arrondis généraux */
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================================================
+   2. BOUTONS & STYLES RÉUTILISABLES
+   ========================================================================== */
+.btn, .btn1 {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover, .btn1:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.btn2 {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.btn2:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+.btn-center {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h1, .section-title h2 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   3. HEADER & NAVIGATION (AVEC MENU HAMBURGER)
+   ========================================================================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 45px;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* ==========================================================================
+   4. PAGE ACCUEIL
+   ========================================================================== */
+
+/* Hero Banner */
+.hero {
+    position: relative;
+    height: 80vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.hero > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(27, 94, 32, 0.85) 0%, rgba(0,0,0,0.4) 100%);
+    z-index: -1;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Section Chiffres */
+.chiffres {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 8%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    margin: 40px 8% 60px 8%;
+    position: relative;
+    z-index: 10;
+    border-radius: var(--radius);
+}
+
+.chiffre {
+    text-align: center;
+}
+
+.chiffre h2 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.chiffre p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* Grille de Produits (Accueil + Page Produits) */
+.produits {
+    padding: 60px 8%;
+}
+
+.produits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.produit {
+    background-color: var(--bg-card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: var(--transition);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.produit:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.produit img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.produit h3 {
+    margin: 15px 0 8px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.produit p {
+    padding: 0 15px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* Actualités */
+.actualites {
+    padding: 60px 8%;
+}
+
+.actualites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.actualite {
+    background-color: var(--bg-card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.actualite img, .actualite-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.actualite-content, .actualite {
+    padding: 20px;
+}
+
+.actualite .date {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.actualite h3, .actualite h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: var(--text-color);
+}
+
+.actualite p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.actualite a {
+    color: var(--primary-color);
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+/* Section Call to Action (CTA) */
+.cta {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 8%;
+    margin: 40px 0;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta .btn {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.cta .btn:hover {
+    background-color: #e0a800;
+}
+
+/* ==========================================================================
+   5. PAGE À PROPOS
+   ========================================================================== */
+.apropos {
+    padding: 60px 8%;
+}
+
+
+hr{
+background-color: #0d4110;
+height: 5px;
+width: 250px;
+margin: 20px auto;
+
+}
+
+.apropos-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.apropos-image, .apropos-text {
+    flex: 1;
+}
+
+.apropos-image img {
+    border-radius: var(--radius);
+}
+
+.mission {
+    background-color: #e8f5e9;
+    padding: 40px 8%;
+    text-align: center;
+    border-radius: var(--radius);
+    margin: 40px 8%;
+}
+
+.mission h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.valeurs {
+    padding: 40px 8%;
+}
+
+.valeurs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.valeur {
+    background: #fff;
+    padding: 25px;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    text-align: center;
+}
+
+.valeur h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+/* Membres / Producteurs */
+.membres {
+    padding: 60px 8%;
+}
+
+.membres-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.membre {
+    background: #fff;
+    border-radius: var(--radius);
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding-bottom: 15px;
+}
+
+.membre img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.membre h3 {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+/* ==========================================================================
+   6. PAGE CONTACT
+   ========================================================================== */
+.contact {
+    padding: 60px 8%;
+}
+
+.contact-container {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+}
+
+.info-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: var(--radius);
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.info-box h3 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.contact-form fieldset {
+    border: none;
+    background: #fff;
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.contact-form h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: var(--primary-color);
+}
+
+/* ==========================================================================
+   7. FOOTER
+   ========================================================================== */
+footer {
+    background-color: #113813;
+    color: #ffffff;
+    padding: 60px 8% 30px 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-logo, .footer-links, .footer-map, .footer-region, .footer-column {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-logo p, .footer-region p {
+    opacity: 0.8;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+footer h3 {
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    opacity: 0.8;
+}
+
+footer ul li a:hover {
+    opacity: 1;
+    color: var(--accent-color);
+}
+
+/* ==========================================================================
+   8. MEDIA QUERIES (DESIGN RESPONSIVE ET MENU HAMBURGER)
+   ========================================================================== */
+@media (max-width: 992px) {
+    .chiffres {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .apropos-content, .contact-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Affiche le bouton hamburger */
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        display: none; /* Masqué par défaut */
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: block; /* Affiché quand la classe 'active' est ajoutée */
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    header .btn {
+        display: none; /* Masquer le bouton d'action principal sur mobile pour purger le header */
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+}
