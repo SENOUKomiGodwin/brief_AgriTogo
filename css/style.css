@@ -615,3 +615,136 @@ footer ul li a:hover {
         flex-direction: column;
     }
 }
+
+/* ==========================================================================
+   9. MODE SOMBRE (THÈME DARK)
+   ========================================================================== */
+:root[data-theme="dark"] {
+    --bg-light: #0e1410;
+    --bg-card: #161d17;
+    --text-color: #e8ece9;
+    --text-muted: #9aa79c;
+    --border-color: #2a332b;
+    color-scheme: dark;
+}
+
+/* Fond des éléments dont la couleur était en dur */
+[data-theme="dark"] header,
+[data-theme="dark"] .nav-links,
+[data-theme="dark"] .chiffres,
+[data-theme="dark"] .valeur,
+[data-theme="dark"] .membre,
+[data-theme="dark"] .info-box,
+[data-theme="dark"] .contact-form fieldset {
+    background-color: var(--bg-card);
+}
+
+[data-theme="dark"] .mission {
+    background-color: #1c2b1e;
+}
+
+[data-theme="dark"] header {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="dark"] .chiffres {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Bordures subtiles pour les cartes sur fond sombre */
+[data-theme="dark"] .produit,
+[data-theme="dark"] .actualite,
+[data-theme="dark"] .valeur,
+[data-theme="dark"] .membre,
+[data-theme="dark"] .info-box,
+[data-theme="dark"] .contact-form fieldset {
+    border: 1px solid var(--border-color);
+}
+
+/* Vert clair pour les titres et liens (lisibilité sur fond sombre) */
+[data-theme="dark"] .section-title h1,
+[data-theme="dark"] .section-title h2,
+[data-theme="dark"] .nav-links a:hover,
+[data-theme="dark"] .menu-toggle,
+[data-theme="dark"] .chiffre h2,
+[data-theme="dark"] .produit h3,
+[data-theme="dark"] .actualite a,
+[data-theme="dark"] .mission h2,
+[data-theme="dark"] .valeur h3,
+[data-theme="dark"] .info-box h3,
+[data-theme="dark"] .contact-form h3 {
+    color: #81c784;
+}
+
+/* Le bouton du CTA garde un texte sombre sur fond jaune */
+[data-theme="dark"] .cta .btn {
+    color: #212529;
+}
+
+/* Champs de formulaire */
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group textarea {
+    background-color: #121a13;
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .form-group input::placeholder,
+[data-theme="dark"] .form-group textarea::placeholder {
+    color: var(--text-muted);
+}
+
+[data-theme="dark"] .form-group input:focus,
+[data-theme="dark"] .form-group textarea:focus {
+    border-color: #81c784;
+}
+
+/* Empêche l'autofill du navigateur de peindre les champs en blanc en mode sombre */
+[data-theme="dark"] .form-group input:-webkit-autofill,
+[data-theme="dark"] .form-group textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #121a13 inset;
+    -webkit-text-fill-color: #e8ece9;
+    caret-color: #e8ece9;
+}
+
+/* Ligne décorative */
+[data-theme="dark"] hr {
+    background-color: #4caf50;
+}
+
+/* ==========================================================================
+   10. BOUTON DE BASCULE DU THÈME
+   ========================================================================== */
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: #eef2ee;
+    color: var(--primary-color);
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.theme-toggle:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    transform: rotate(20deg) scale(1.05);
+}
+
+[data-theme="dark"] .theme-toggle {
+    background-color: var(--bg-card);
+    color: #81c784;
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    background-color: #81c784;
+    color: #121a13;
+}
