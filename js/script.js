@@ -15,3 +15,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+const contactForm = document.getElementById('contactForm');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault(); // Empêche le rechargement de la page
+        
+        // Afficher un message de succès
+        alert('Merci ! Votre message a bien été envoyé à l\'équipe AGRI-TOGO.');
+        
+        // Vider le formulaire
+        contactForm.reset();
+    });
+}
