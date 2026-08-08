@@ -1,90 +1,91 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgriTogo</title>
+<!DOCTYPE html>  <!-- Déclaration du type de document : HTML5 -->
+<html lang="fr">  <!-- Langue de la page : français -->
+<head>  <!-- Zone des métadonnées et des ressources -->
+    <meta charset="UTF-8">  <!-- Encodage des caractères (accents français) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Rendu responsive sur mobile -->
+    <title>AgriTogo</title>  <!-- Titre affiché dans l'onglet du navigateur -->
+    <!-- Applique le thème sauvegardé avant le rendu pour éviter un "flash" de couleur -->
     <script>try{var theme=localStorage.getItem("theme")}catch(e){}document.documentElement.dataset.theme=theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");</script>
-    <script defer src="js/mdsombre.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/mdsombre.js"></script>  <!-- Script du mode sombre/clair, chargé en différé -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">  <!-- Icônes Font Awesome -->
+    <link rel="stylesheet" href="css/style.css">  <!-- Feuille de style principale du site -->
 </head>
 
-<body>
-    <header>
+<body>  <!-- Contenu visible de la page -->
+    <header>  <!-- Barre de navigation fixée en haut de la page -->
 
-    <div class="logo">
-        <img src="image/logo.png" alt="AgriTogo">
+    <div class="logo">  <!-- Bloc du logo -->
+        <img src="image/logo.png" alt="AgriTogo">  <!-- Image du logo -->
     </div>
 
-    <nav class="nav-links">
+    <nav class="nav-links">  <!-- Menu de navigation principal -->
 
-        <ul>
+        <ul>  <!-- Liste des liens du menu -->
 
-            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html">Accueil</a></li>  <!-- Lien : page d'accueil -->
 
-            <li><a href="Apropos.html">À propos</a></li>
+            <li><a href="Apropos.html">À propos</a></li>  <!-- Lien : page À propos -->
 
-            <li><a href="NosProduits.html">Produits</a></li>
+            <li><a href="NosProduits.html">Produits</a></li>  <!-- Lien : page Produits -->
 
-            <li><a href="Actualités.html">Actualités</a></li>
+            <li><a href="Actualités.html">Actualités</a></li>  <!-- Lien : page Actualités -->
 
-            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Contact.html">Contact</a></li>  <!-- Lien : page Contact -->
 
         </ul>
 
     </nav>
 
-    <a href="Contact.html" class="btn">
+    <a href="Contact.html" class="btn">  <!-- Bouton d'appel à l'action vers la page Contact -->
         Commencer
     </a>
 
-    <div class="menu-toggle">
+    <div class="menu-toggle">  <!-- Bouton hamburger, visible uniquement sur mobile -->
 
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars"></i>  <!-- Icône du menu hamburger -->
 
     </div>
 
 </header>
 
-<main>
+<main>  <!-- Contenu principal de la page -->
 
-    <!-- ================= ACTUALITÉS ================= -->
+    <!-- ================= SECTION ACTUALITÉS ================= -->
 
-    <section class="actualites">
+    <section class="actualites">  <!-- Section des actualités et événements -->
 
-        <div class="section-title">
-            <h1>Nos actualités & évènements</h1>
-            <p>
+        <div class="section-title">  <!-- Titre de section (centré) -->
+            <h1>Nos actualités & évènements</h1>  <!-- Titre principal de la page -->
+            <p>  <!-- Sous-titre de la page -->
                 Découvrez les dernières nouvelles, événements et initiatives
                 d'AGRI-TOGO.
             </p>
         </div>
 
-        <div class="actualites-list">
+        <div class="actualites-list">  <!-- Liste verticale des articles -->
 
-            <!-- Actualité 1 -->
+            <!-- Actualité 1 : foire agricole -->
 
-            <article class="actualite">
+            <article class="actualite">  <!-- Article de la première actualité -->
 
-                <div class="actualite-image">
-                    <img src="image/actualite1.jpg" alt="Foire agricole de Tsévié">
+                <div class="actualite-image">  <!-- Bloc contenant l'image -->
+                    <img src="image/actualite1.jpg" alt="Foire agricole de Tsévié">  <!-- Image de l'actualité -->
                 </div>
 
-                <div class="actualite-content">
+                <div class="actualite-content">  <!-- Bloc contenant le texte -->
 
-                    <span class="date">12 Mai 2024</span>
+                    <span class="date">12 Mai 2024</span>  <!-- Date de l'actualité -->
 
-                    <h2>Foire agricole de Tsévié 2024</h2>
+                    <h2>Foire agricole de Tsévié 2024</h2>  <!-- Titre de l'actualité -->
 
-                    <p>
+                    <p>  <!-- Premier paragraphe de l'actualité -->
                         AGRI-TOGO a participé à la foire agricole de Tabligbo.
                         Merci à tous les visiteurs ! Cette édition a été un
                         véritable succès grâce à votre présence et à votre
                         intérêt pour notre travail.
                     </p>
 
-                    <p>
+                    <p>  <!-- Deuxième paragraphe de l'actualité -->
                         Notre stand a été animé par de nombreux échanges autour
                         de l'agriculture togolaise. Vos retours positifs sur la
                         qualité de nos produits nous encouragent à poursuivre
@@ -92,7 +93,7 @@
                         responsable et durable.
                     </p>
 
-                    <p>
+                    <p>  <!-- Troisième paragraphe de l'actualité -->
                         Toute l'équipe remercie chaleureusement les visiteurs,
                         partenaires et producteurs qui ont contribué à cette
                         réussite.
@@ -102,9 +103,9 @@
 
             </article>
 
-            <!-- Actualité 2 -->
+            <!-- Actualité 2 : formation -->
 
-            <article class="actualite">
+            <article class="actualite">  <!-- Article de la deuxième actualité -->
 
                 <div class="actualite-image">
                     <img src="image/actualite2.jpg" alt="Formation agricole">
@@ -138,9 +139,9 @@
 
             </article>
 
-            <!-- Actualité 3 -->
+            <!-- Actualité 3 : récolte de maïs -->
 
-            <article class="actualite">
+            <article class="actualite">  <!-- Article de la troisième actualité -->
 
                 <div class="actualite-image">
                     <img src="image/recoltemaÏs.jfif" alt="Récolte de maïs">
@@ -178,35 +179,35 @@
     </section>
 
 </main>
-<footer>
+<footer>  <!-- Pied de page : carte et régions d'action -->
 
-    <div class="footer-map">
+    <div class="footer-map">  <!-- Bloc contenant la carte -->
 
-        <img src="image/cartographie.png" alt="Carte du Togo">
+        <img src="image/cartographie.png" alt="Carte du Togo">  <!-- Image de la carte -->
 
     </div>
 
-    <div class="footer-region">
+    <div class="footer-region">  <!-- Bloc des régions d'action -->
 
-        <h3>Nos régions d'action</h3>
+        <h3>Nos régions d'action</h3>  <!-- Titre du bloc -->
 
-        <p>
+        <p>  <!-- Paragraphe d'introduction -->
             Nous intervenons principalement dans deux grandes régions
             agricoles du Togo.
         </p>
 
-        <ul>
-            <li>Région Maritime</li>
-            <li>Région des Plateaux</li>
+        <ul>  <!-- Liste des régions -->
+            <li>Région Maritime</li>  <!-- Première région -->
+            <li>Région des Plateaux</li>  <!-- Deuxième région -->
         </ul>
 
-        <p>
+        <p>  <!-- Paragraphe de conclusion -->
             Avec un réseau de producteurs dévoués et passionnés.
         </p>
 
     </div>
 
 </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.js"></script>  <!-- Script principal (menu mobile) -->
 </body>
 </html>

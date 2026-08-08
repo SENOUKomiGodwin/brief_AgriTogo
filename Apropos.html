@@ -1,75 +1,76 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgriTogo</title>
+<!DOCTYPE html>  <!-- Déclaration du type de document : HTML5 -->
+<html lang="fr">  <!-- Langue de la page : français -->
+<head>  <!-- Zone des métadonnées et des ressources -->
+    <meta charset="UTF-8">  <!-- Encodage des caractères (accents français) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Rendu responsive sur mobile -->
+    <title>AgriTogo</title>  <!-- Titre affiché dans l'onglet du navigateur -->
+    <!-- Applique le thème sauvegardé avant le rendu pour éviter un "flash" de couleur -->
     <script>try{var theme=localStorage.getItem("theme")}catch(e){}document.documentElement.dataset.theme=theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");</script>
-    <script defer src="js/mdsombre.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/mdsombre.js"></script>  <!-- Script du mode sombre/clair, chargé en différé -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">  <!-- Icônes Font Awesome -->
+    <link rel="stylesheet" href="css/style.css">  <!-- Feuille de style principale du site -->
 </head>
 
-<body>
-    <header>
+<body>  <!-- Contenu visible de la page -->
+    <header>  <!-- Barre de navigation fixée en haut de la page -->
 
-    <div class="logo">
-        <img src="image/logo.png" alt="AgriTogo">
+    <div class="logo">  <!-- Bloc du logo -->
+        <img src="image/logo.png" alt="AgriTogo">  <!-- Image du logo -->
     </div>
 
-    <nav class="nav-links">
+    <nav class="nav-links">  <!-- Menu de navigation principal -->
 
-        <ul>
+        <ul>  <!-- Liste des liens du menu -->
 
-            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html">Accueil</a></li>  <!-- Lien : page d'accueil -->
 
-            <li><a href="Apropos.html">À propos</a></li>
+            <li><a href="Apropos.html">À propos</a></li>  <!-- Lien : page À propos -->
 
-            <li><a href="NosProduits.html">Produits</a></li>
+            <li><a href="NosProduits.html">Produits</a></li>  <!-- Lien : page Produits -->
 
-            <li><a href="Actualités.html">Actualités</a></li>
+            <li><a href="Actualités.html">Actualités</a></li>  <!-- Lien : page Actualités -->
 
-            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Contact.html">Contact</a></li>  <!-- Lien : page Contact -->
 
         </ul>
 
     </nav>
 
-    <a href="Contact.html" class="btn">
+    <a href="Contact.html" class="btn">  <!-- Bouton d'appel à l'action vers la page Contact -->
         Commencer
     </a>
 
-    <div class="menu-toggle">
+    <div class="menu-toggle">  <!-- Bouton hamburger, visible uniquement sur mobile -->
 
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars"></i>  <!-- Icône du menu hamburger -->
 
     </div>
 
 </header>
 
-<main>
+<main>  <!-- Contenu principal de la page -->
 
-    <!-- ================= INTRODUCTION ================= -->
+    <!-- ================= SECTION INTRODUCTION ================= -->
 
-    <section class="apropos">
+    <section class="apropos">  <!-- Section d'introduction de la page À propos -->
 
-        <div class="section-title">
-            <h1>À propos de nous</h1>
-            <hr>
+        <div class="section-title">  <!-- Titre de section (centré) -->
+            <h1>À propos de nous</h1>  <!-- Titre principal de la page -->
+            <hr>  <!-- Ligne décorative sous le titre -->
         </div>
 
-        <div class="apropos-content">
+        <div class="apropos-content">  <!-- Bloc contenant l'image et le texte -->
 
-            <div class="apropos-image">
-                <img src="image/apropos.jpg" alt="À propos de nous">
+            <div class="apropos-image">  <!-- Bloc de l'image -->
+                <img src="image/apropos.jpg" alt="À propos de nous">  <!-- Image d'illustration -->
             </div>
 
-            <div class="apropos-text">
+            <div class="apropos-text">  <!-- Bloc du texte -->
 
-                <div class="histoire">
-                    <h2>Notre histoire</h2>
+                <div class="histoire">  <!-- Sous-bloc racontant l'histoire -->
+                    <h2>Notre histoire</h2>  <!-- Titre du sous-bloc -->
 
-                    <p>
+                    <p>  <!-- Paragraphe présentant la coopérative -->
                         AGRI-TOGO est une coopérative agricole regroupant des
                         producteurs de la région Maritime et des Plateaux.
                         Depuis notre création, nous travaillons ensemble pour
@@ -84,13 +85,13 @@
 
     </section>
 
-    <!-- ================= MISSION ================= -->
+    <!-- ================= SECTION MISSION ================= -->
 
-    <section class="mission">
+    <section class="mission">  <!-- Section présentant la mission -->
 
-        <h2>Notre mission</h2>
+        <h2>Notre mission</h2>  <!-- Titre de la section -->
 
-        <p>
+        <p>  <!-- Description de la mission -->
             Accompagner nos membres, promouvoir les bonnes pratiques
             agricoles et offrir des produits locaux de qualité afin de
             contribuer à la sécurité alimentaire et au développement
@@ -99,17 +100,17 @@
 
     </section>
 
-    <!-- ================= VALEURS ================= -->
+    <!-- ================= SECTION VALEURS ================= -->
 
-    <section class="valeurs">
+    <section class="valeurs">  <!-- Section des valeurs de la coopérative -->
 
-        <h2>Nos valeurs</h2>
+        <h2>Nos valeurs</h2>  <!-- Titre de la section -->
 
-        <div class="valeurs-grid">
+        <div class="valeurs-grid">  <!-- Grille responsive des valeurs -->
 
-            <div class="valeur">
-                <h3>🤝 Solidarité</h3>
-                <p>Solidarité et entraide entre producteurs.</p>
+            <div class="valeur">  <!-- Carte d'une valeur -->
+                <h3>🤝 Solidarité</h3>  <!-- Nom de la valeur -->
+                <p>Solidarité et entraide entre producteurs.</p>  <!-- Description -->
             </div>
 
             <div class="valeur">
@@ -131,21 +132,21 @@
 
     </section>
 
-    <!-- ================= MEMBRES ================= -->
+    <!-- ================= SECTION MEMBRES ================= -->
 
-    <section class="membres">
+    <section class="membres">  <!-- Section présentant les membres / producteurs -->
 
-        <div class="section-title">
-            <h2>Nos membres / Producteurs</h2>
+        <div class="section-title">  <!-- Titre de section (centré) -->
+            <h2>Nos membres / Producteurs</h2>  <!-- Titre de la section -->
         </div>
 
-        <div class="membres-grid">
+        <div class="membres-grid">  <!-- Grille responsive des membres -->
 
-            <article class="membre">
+            <article class="membre">  <!-- Carte d'un membre -->
 
-                <img src="image/membre1.jpg" alt="Kossi Agbeko">
+                <img src="image/membre1.jpg" alt="Kossi Agbeko">  <!-- Photo du membre -->
 
-                <h3>Kossi Agbeko</h3>
+                <h3>Kossi Agbeko</h3>  <!-- Nom du membre -->
 
             </article>
 
@@ -179,37 +180,37 @@
 
 </main>
 
-<!-- ================= FOOTER ================= -->
+<!-- ================= PIED DE PAGE (FOOTER) ================= -->
 
-<footer>
+<footer>  <!-- Pied de page : carte et régions d'action -->
 
-    <div class="footer-map">
+    <div class="footer-map">  <!-- Bloc contenant la carte -->
 
-        <img src="image/cartographie.png" alt="Carte du Togo">
+        <img src="image/cartographie.png" alt="Carte du Togo">  <!-- Image de la carte -->
 
     </div>
 
-    <div class="footer-region">
+    <div class="footer-region">  <!-- Bloc des régions d'action -->
 
-        <h3>Nos régions d'action</h3>
+        <h3>Nos régions d'action</h3>  <!-- Titre du bloc -->
 
-        <p>
+        <p>  <!-- Paragraphe d'introduction -->
             Nous intervenons principalement dans deux grandes régions
             agricoles du Togo.
         </p>
 
-        <ul>
-            <li>Région Maritime</li>
-            <li>Région des Plateaux</li>
+        <ul>  <!-- Liste des régions -->
+            <li>Région Maritime</li>  <!-- Première région -->
+            <li>Région des Plateaux</li>  <!-- Deuxième région -->
         </ul>
 
-        <p>
+        <p>  <!-- Paragraphe de conclusion -->
             Avec un réseau de producteurs dévoués et passionnés.
         </p>
 
     </div>
 
 </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.js"></script>  <!-- Script principal (menu mobile) -->
 </body>
 </html>

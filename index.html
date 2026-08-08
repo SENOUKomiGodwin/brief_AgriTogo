@@ -1,78 +1,79 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgriTogo</title>
+<!DOCTYPE html>  <!-- Déclaration du type de document : HTML5 -->
+<html lang="fr">  <!-- Langue de la page : français -->
+<head>  <!-- Zone des métadonnées et des ressources -->
+    <meta charset="UTF-8">  <!-- Encodage des caractères (accents français) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Rendu responsive sur mobile -->
+    <title>AgriTogo</title>  <!-- Titre affiché dans l'onglet du navigateur -->
+    <!-- Applique le thème sauvegardé avant le rendu pour éviter un "flash" de couleur -->
     <script>try{var theme=localStorage.getItem("theme")}catch(e){}document.documentElement.dataset.theme=theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");</script>
-    <script defer src="js/mdsombre.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/mdsombre.js"></script>  <!-- Script du mode sombre/clair, chargé en différé -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">  <!-- Icônes Font Awesome -->
+    <link rel="stylesheet" href="css/style.css">  <!-- Feuille de style principale du site -->
 </head>
 
-<body>
+<body>  <!-- Contenu visible de la page -->
 
-    <!-- ================= HEADER ================= -->
-   <header>
+    <!-- ================= EN-TÊTE (HEADER) ================= -->
+   <header>  <!-- Barre de navigation fixée en haut de la page -->
 
-    <div class="logo">
-        <img src="image/logo.png" alt="AgriTogo">
+    <div class="logo">  <!-- Bloc du logo -->
+        <img src="image/logo.png" alt="AgriTogo">  <!-- Image du logo -->
     </div>
 
-    <nav class="nav-links">
+    <nav class="nav-links">  <!-- Menu de navigation principal -->
 
-        <ul>
+        <ul>  <!-- Liste des liens du menu -->
 
-            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html">Accueil</a></li>  <!-- Lien : page d'accueil -->
 
-            <li><a href="Apropos.html">À propos</a></li>
+            <li><a href="Apropos.html">À propos</a></li>  <!-- Lien : page À propos -->
 
-            <li><a href="NosProduits.html">Produits</a></li>
+            <li><a href="NosProduits.html">Produits</a></li>  <!-- Lien : page Produits -->
 
-            <li><a href="Actualités.html">Actualités</a></li>
+            <li><a href="Actualités.html">Actualités</a></li>  <!-- Lien : page Actualités -->
 
-            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Contact.html">Contact</a></li>  <!-- Lien : page Contact -->
 
         </ul>
 
     </nav>
 
-    <a href="Contact.html" class="btn">
+    <a href="Contact.html" class="btn">  <!-- Bouton d'appel à l'action vers la page Contact -->
         Commencer
     </a>
 
-    <div class="menu-toggle">
+    <div class="menu-toggle">  <!-- Bouton hamburger, visible uniquement sur mobile -->
 
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars"></i>  <!-- Icône du menu hamburger -->
 
     </div>
 
 </header>
 
-    <main>
+    <main>  <!-- Contenu principal de la page -->
 
-        <!-- ================= HERO ================= -->
-        <section class="hero">
+        <!-- ================= SECTION HERO (BANNIÈRE) ================= -->
+        <section class="hero">  <!-- Grande bannière d'accueil avec image de fond -->
 
-            <img src="image/agriImage.jfif" alt="Agriculteurs">
+            <img src="image/agriImage.jfif" alt="Agriculteurs">  <!-- Image de fond de la bannière -->
 
-            <div class="overlay"></div>
+            <div class="overlay"></div>  <!-- Voile sombre pour améliorer la lisibilité du texte -->
 
-            <div class="hero-content">
+            <div class="hero-content">  <!-- Bloc contenant le texte de la bannière -->
 
-                <h1>Cultivons ensemble <br> un avenir durable</h1>
+                <h1>Cultivons ensemble <br> un avenir durable</h1>  <!-- Titre principal (avec saut de ligne) -->
 
-                <p>
+                <p>  <!-- Paragraphe d'introduction -->
                     Des produits agricoles locaux de qualité pour une agriculture
                     prospère et une meilleure sécurité alimentaire au Togo.
                 </p>
 
-                <div class="hero-buttons">
-                    <a href="NosProduits.html" class="btn1">
+                <div class="hero-buttons">  <!-- Conteneur des boutons de la bannière -->
+                    <a href="NosProduits.html" class="btn1">  <!-- Bouton principal : découvrir les produits -->
                         Découvrir nos produits
                     </a>
 
-                    <a href="Contact.html" class="btn2">
+                    <a href="Contact.html" class="btn2">  <!-- Bouton secondaire : nous contacter -->
                         Nous contacter
                     </a>
                 </div>
@@ -81,13 +82,13 @@
 
         </section>
 
-        <!-- ================= CHIFFRES ================= -->
+        <!-- ================= SECTION CHIFFRES CLÉS ================= -->
 
-        <section class="chiffres">
+        <section class="chiffres">  <!-- Bandeau des chiffres clés de la coopérative -->
 
-            <div class="chiffre">
-                <h2>+500</h2>
-                <p><strong>Producteurs</strong> locaux</p>
+            <div class="chiffre">  <!-- Bloc d'un chiffre clé -->
+                <h2>+500</h2>  <!-- Valeur du chiffre -->
+                <p><strong>Producteurs</strong> locaux</p>  <!-- Légende du chiffre -->
             </div>
 
             <div class="chiffre">
@@ -112,23 +113,23 @@
 
         </section>
 
-        <!-- ================= PRODUITS ================= -->
+        <!-- ================= SECTION PRODUITS PHARES ================= -->
 
-        <section class="produits">
+        <section class="produits">  <!-- Section présentant les produits phares -->
 
-            <div class="section-title">
-                <h2>Nos Produits Phares</h2>
-                <p>
+            <div class="section-title">  <!-- Titre de section (centré) -->
+                <h2>Nos Produits Phares</h2>  <!-- Titre de la section -->
+                <p>  <!-- Sous-titre de la section -->
                     Découvrez notre gamme de produits agricoles
                     100% locaux de qualité.
                 </p>
             </div>
 
-            <div class="produits-grid">
+            <div class="produits-grid">  <!-- Grille responsive des produits -->
 
-                <div class="produit">
-                    <img src="image/mais.jfif" alt="Maïs">
-                    <h3>Maïs</h3>
+                <div class="produit">  <!-- Carte d'un produit -->
+                    <img src="image/mais.jfif" alt="Maïs">  <!-- Image du produit -->
+                    <h3>Maïs</h3>  <!-- Nom du produit -->
                 </div>
 
                 <div class="produit">
@@ -148,46 +149,46 @@
 
             </div>
 
-            <div class="btn-center">
-                <a href="NosProduits.html" class="btn">
+            <div class="btn-center">  <!-- Bloc centré pour le bouton -->
+                <a href="NosProduits.html" class="btn">  <!-- Bouton vers la page des produits -->
                     Voir tous nos produits
                 </a>
             </div>
 
         </section>
 
-        <!-- ================= ACTUALITÉS ================= -->
+        <!-- ================= SECTION ACTUALITÉS ================= -->
 
-        <section class="actualites">
+        <section class="actualites">  <!-- Section des dernières actualités -->
 
-            <div class="section-title">
-                <h2>Dernières actualités</h2>
-                <p>
+            <div class="section-title">  <!-- Titre de section (centré) -->
+                <h2>Dernières actualités</h2>  <!-- Titre de la section -->
+                <p>  <!-- Sous-titre de la section -->
                     Restez informés sur nos dernières activités,
                     événements et initiatives.
                 </p>
             </div>
 
-            <div class="actualites-grid">
+            <div class="actualites-grid">  <!-- Grille responsive des articles -->
 
-                <article class="actualite">
+                <article class="actualite">  <!-- Article de la première actualité -->
 
-                    <img src="image/actualite1.jpg" alt="Actualité 1">
+                    <img src="image/actualite1.jpg" alt="Actualité 1">  <!-- Image de l'article -->
 
-                    <p>12 Mai 2024</p>
+                    <p>12 Mai 2024</p>  <!-- Date de l'actualité -->
 
-                    <h3>Foire agricole de Tsévié 2024</h3>
+                    <h3>Foire agricole de Tsévié 2024</h3>  <!-- Titre de l'actualité -->
 
-                    <p>
+                    <p>  <!-- Résumé de l'actualité -->
                         AGRI-TOGO a participé à la foire agricole de
                         Tabligbo. Merci à tous les visiteurs !
                     </p>
 
-                    <a href="Actualités.html">Lire plus</a>
+                    <a href="Actualités.html">Lire plus</a>  <!-- Lien vers la page Actualités -->
 
                 </article>
 
-                <article class="actualite">
+                <article class="actualite">  <!-- Article de la deuxième actualité -->
 
                     <img src="image/actualite2.jpg" alt="Actualité 2">
 
@@ -206,7 +207,7 @@
 
                 </article>
 
-                <article class="actualite">
+                <article class="actualite">  <!-- Article de la troisième actualité -->
 
                     <img src="image/actualite3.jpg" alt="Actualité 3">
 
@@ -227,16 +228,16 @@
 
         </section>
 
-        <!-- ================= CTA ================= -->
+        <!-- ================= SECTION APPEL À L'ACTION (CTA) ================= -->
 
-        <section class="cta">
+        <section class="cta">  <!-- Section incitant le visiteur à nous contacter -->
 
-            <h2>
+            <h2>  <!-- Message d'appel à l'action -->
                 Rejoignez AGRI-TOGO dès aujourd'hui
                 et faites partie du changement !
             </h2>
 
-            <a href="Contact.html" class="btn">
+            <a href="Contact.html" class="btn">  <!-- Bouton vers la page Contact -->
                 Nous contacter
             </a>
 
@@ -244,62 +245,62 @@
 
     </main>
 
-    <!-- ================= FOOTER ================= -->
+    <!-- ================= PIED DE PAGE (FOOTER) ================= -->
 
-    <footer>
+    <footer>  <!-- Pied de page avec le logo et les liens -->
 
-        <div class="footer-logo">
+        <div class="footer-logo">  <!-- Bloc logo et slogan -->
 
-            <img src="image/logo.png" alt="AgriTogo Logo">
+            <img src="image/logo.png" alt="AgriTogo Logo">  <!-- Image du logo -->
 
-            <p>
+            <p>  <!-- Slogan de la coopérative -->
                 Ensemble cultivons un avenir durable et prospère
                 pour les générations futures.
             </p>
 
         </div>
 
-        <div class="footer-links">
+        <div class="footer-links">  <!-- Colonne de liens rapides -->
 
-            <h3>Liens rapides</h3>
+            <h3>Liens rapides</h3>  <!-- Titre de la colonne -->
 
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="Apropos.html">À propos</a></li>
-                <li><a href="NosProduits.html">Nos produits</a></li>
-                <li><a href="Actualités.html">Actualités</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+            <ul>  <!-- Liste des liens rapides -->
+                <li><a href="index.html">Accueil</a></li>  <!-- Lien : accueil -->
+                <li><a href="Apropos.html">À propos</a></li>  <!-- Lien : à propos -->
+                <li><a href="NosProduits.html">Nos produits</a></li>  <!-- Lien : produits -->
+                <li><a href="Actualités.html">Actualités</a></li>  <!-- Lien : actualités -->
+                <li><a href="Contact.html">Contact</a></li>  <!-- Lien : contact -->
             </ul>
 
         </div>
 
-        <div class="footer-links">
+        <div class="footer-links">  <!-- Colonne des produits -->
 
-            <h3>Nos produits</h3>
+            <h3>Nos produits</h3>  <!-- Titre de la colonne -->
 
-            <ul>
-                <li><a href="NosProduits.html">Maïs</a></li>
-                <li><a href="NosProduits.html">Manioc</a></li>
-                <li><a href="NosProduits.html">Ananas</a></li>
-                <li><a href="NosProduits.html">Produits transformés</a></li>
+            <ul>  <!-- Liste des produits -->
+                <li><a href="NosProduits.html">Maïs</a></li>  <!-- Lien : maïs -->
+                <li><a href="NosProduits.html">Manioc</a></li>  <!-- Lien : manioc -->
+                <li><a href="NosProduits.html">Ananas</a></li>  <!-- Lien : ananas -->
+                <li><a href="NosProduits.html">Produits transformés</a></li>  <!-- Lien : produits transformés -->
             </ul>
 
         </div>
 
-        <div class="footer-links">
+        <div class="footer-links">  <!-- Colonne des coordonnées -->
 
-            <h3>Nous trouver</h3>
+            <h3>Nous trouver</h3>  <!-- Titre de la colonne -->
 
-            <ul>
-                <li>Kara, Haho & Plateaux - Togo</li>
-                <li>+228 90 00 00 00</li>
-                <li>contact@agri-togo.tg</li>
+            <ul>  <!-- Liste des coordonnées -->
+                <li>Kara, Haho & Plateaux - Togo</li>  <!-- Localisation -->
+                <li>+228 90 00 00 00</li>  <!-- Téléphone -->
+                <li>contact@agri-togo.tg</li>  <!-- E-mail -->
             </ul>
 
         </div>
 
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.js"></script>  <!-- Script principal (menu mobile) -->
 
 </body>
 </html>

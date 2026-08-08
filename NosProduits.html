@@ -1,70 +1,71 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgriTogo</title>
+<!DOCTYPE html>  <!-- Déclaration du type de document : HTML5 -->
+<html lang="fr">  <!-- Langue de la page : français -->
+<head>  <!-- Zone des métadonnées et des ressources -->
+    <meta charset="UTF-8">  <!-- Encodage des caractères (accents français) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Rendu responsive sur mobile -->
+    <title>AgriTogo</title>  <!-- Titre affiché dans l'onglet du navigateur -->
+    <!-- Applique le thème sauvegardé avant le rendu pour éviter un "flash" de couleur -->
     <script>try{var theme=localStorage.getItem("theme")}catch(e){}document.documentElement.dataset.theme=theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");</script>
-    <script defer src="js/mdsombre.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/mdsombre.js"></script>  <!-- Script du mode sombre/clair, chargé en différé -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">  <!-- Icônes Font Awesome -->
+    <link rel="stylesheet" href="css/style.css">  <!-- Feuille de style principale du site -->
 </head>
-<body>
-    <header>
+<body>  <!-- Contenu visible de la page -->
+    <header>  <!-- Barre de navigation fixée en haut de la page -->
 
-    <div class="logo">
-        <img src="image/logo.png" alt="AgriTogo">
+    <div class="logo">  <!-- Bloc du logo -->
+        <img src="image/logo.png" alt="AgriTogo">  <!-- Image du logo -->
     </div>
 
-    <nav class="nav-links">
+    <nav class="nav-links">  <!-- Menu de navigation principal -->
 
-        <ul>
+        <ul>  <!-- Liste des liens du menu -->
 
-            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html">Accueil</a></li>  <!-- Lien : page d'accueil -->
 
-            <li><a href="Apropos.html">À propos</a></li>
+            <li><a href="Apropos.html">À propos</a></li>  <!-- Lien : page À propos -->
 
-            <li><a href="NosProduits.html">Produits</a></li>
+            <li><a href="NosProduits.html">Produits</a></li>  <!-- Lien : page Produits -->
 
-            <li><a href="Actualités.html">Actualités</a></li>
+            <li><a href="Actualités.html">Actualités</a></li>  <!-- Lien : page Actualités -->
 
-            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Contact.html">Contact</a></li>  <!-- Lien : page Contact -->
 
         </ul>
 
     </nav>
 
-    <a href="Contact.html" class="btn">
+    <a href="Contact.html" class="btn">  <!-- Bouton d'appel à l'action vers la page Contact -->
         Commencer
     </a>
 
-    <div class="menu-toggle">
+    <div class="menu-toggle">  <!-- Bouton hamburger, visible uniquement sur mobile -->
 
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars"></i>  <!-- Icône du menu hamburger -->
 
     </div>
 
 </header>
-    <main>
+    <main>  <!-- Contenu principal de la page -->
 
-        <!-- ================= NOS PRODUITS ================= -->
+        <!-- ================= SECTION NOS PRODUITS ================= -->
 
-        <section class="produits">
+        <section class="produits">  <!-- Section listant tous les produits -->
 
-            <div class="section-title">
-                <h1>Nos Produits</h1>
-                <p>
+            <div class="section-title">  <!-- Titre de section (centré) -->
+                <h1>Nos Produits</h1>  <!-- Titre principal de la page -->
+                <p>  <!-- Sous-titre de la page -->
                     Découvrez notre sélection de produits agricoles locaux,
                     cultivés et transformés avec soin par nos producteurs.
                 </p>
             </div>
 
-            <div class="produits-grid">
+            <div class="produits-grid">  <!-- Grille responsive des produits -->
 
-                <article class="produit">
-                    <img src="image/mais.jfif" alt="Maïs jaune">
-                    <h3>Maïs jaune</h3>
-                    <p>Riche en fibres, en vitamines et très nourrissant.</p>
+                <article class="produit">  <!-- Carte d'un produit -->
+                    <img src="image/mais.jfif" alt="Maïs jaune">  <!-- Image du produit -->
+                    <h3>Maïs jaune</h3>  <!-- Nom du produit -->
+                    <p>Riche en fibres, en vitamines et très nourrissant.</p>  <!-- Description du produit -->
                 </article>
 
                 <article class="produit">
@@ -115,62 +116,62 @@
 
     </main>
 
-    <!-- ================= FOOTER ================= -->
+    <!-- ================= PIED DE PAGE (FOOTER) ================= -->
 
-        <footer>
+        <footer>  <!-- Pied de page avec le logo et les liens -->
 
-        <div class="footer-logo">
+        <div class="footer-logo">  <!-- Bloc logo et slogan -->
 
-            <img src="image/logo.png" alt="AgriTogo Logo">
+            <img src="image/logo.png" alt="AgriTogo Logo">  <!-- Image du logo -->
 
-            <p>
+            <p>  <!-- Slogan de la coopérative -->
                 Ensemble cultivons un avenir durable et prospère
                 pour les générations futures.
             </p>
 
         </div>
 
-        <div class="footer-links">
+        <div class="footer-links">  <!-- Colonne de liens rapides -->
 
-            <h3>Liens rapides</h3>
+            <h3>Liens rapides</h3>  <!-- Titre de la colonne -->
 
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="Apropos.html">À propos</a></li>
-                <li><a href="NosProduits.html">Nos produits</a></li>
-                <li><a href="Actualités.html">Actualités</a></li>
-                <li><a href="Contact.html">Contact</a></li>
+            <ul>  <!-- Liste des liens rapides -->
+                <li><a href="index.html">Accueil</a></li>  <!-- Lien : accueil -->
+                <li><a href="Apropos.html">À propos</a></li>  <!-- Lien : à propos -->
+                <li><a href="NosProduits.html">Nos produits</a></li>  <!-- Lien : produits -->
+                <li><a href="Actualités.html">Actualités</a></li>  <!-- Lien : actualités -->
+                <li><a href="Contact.html">Contact</a></li>  <!-- Lien : contact -->
             </ul>
 
         </div>
 
-        <div class="footer-links">
+        <div class="footer-links">  <!-- Colonne des produits -->
 
-            <h3>Nos produits</h3>
+            <h3>Nos produits</h3>  <!-- Titre de la colonne -->
 
-            <ul>
-                <li><a href="NosProduits.html">Maïs</a></li>
-                <li><a href="NosProduits.html">Manioc</a></li>
-                <li><a href="NosProduits.html">Ananas</a></li>
-                <li><a href="NosProduits.html">Produits transformés</a></li>
+            <ul>  <!-- Liste des produits -->
+                <li><a href="NosProduits.html">Maïs</a></li>  <!-- Lien : maïs -->
+                <li><a href="NosProduits.html">Manioc</a></li>  <!-- Lien : manioc -->
+                <li><a href="NosProduits.html">Ananas</a></li>  <!-- Lien : ananas -->
+                <li><a href="NosProduits.html">Produits transformés</a></li>  <!-- Lien : produits transformés -->
             </ul>
 
         </div>
 
-        <div class="footer-links">
+        <div class="footer-links">  <!-- Colonne des coordonnées -->
 
-            <h3>Nous trouver</h3>
+            <h3>Nous trouver</h3>  <!-- Titre de la colonne -->
 
-            <ul>
-                <li>Kara, Haho & Plateaux - Togo</li>
-                <li>+228 90 00 00 00</li>
-                <li>contact@agri-togo.tg</li>
+            <ul>  <!-- Liste des coordonnées -->
+                <li>Kara, Haho & Plateaux - Togo</li>  <!-- Localisation -->
+                <li>+228 90 00 00 00</li>  <!-- Téléphone -->
+                <li>contact@agri-togo.tg</li>  <!-- E-mail -->
             </ul>
 
         </div>
 
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.js"></script>  <!-- Script principal (menu mobile) -->
 
 </body>
 </html>
