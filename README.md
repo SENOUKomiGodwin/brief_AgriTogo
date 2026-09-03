@@ -17,19 +17,43 @@ Ce site vitrine permet aux utilisateurs de :
 
 ## 📁 Structure du Projet
 
-```text
-brief_AgriTogo/
-├── image/                 # Ressources visuelles (produits, membres, bannières, logo)
-├── JS/
-│   ├── mdsombre.js        # Gestion du mode sombre / clair
-│   └── script.js          # Scripts JavaScript principaux (interactivité UI)
-├── Actualités.html        # Page des actualités du secteur
-├── Apropos.html           # Présentation de la structure et de l'équipe
-├── Contact.html           # Formulaire et coordonnées de contact
-├── index.html             # Page d'accueil du site vitrine
-├── NosProduits.html       # Catalogue des produits agricoles
-└── style.css              # Feuilles de style CSS
-```
+│   Actualités.html
+│   Apropos.html
+│   Contact.html
+│   index.html
+│   NosProduits.html
+│
+├───css
+│       style.css
+│
+├───image
+│       actualite1.jpg
+│       actualite2.jpg
+│       actualite3.jpg
+│       agriImage.jfif
+│       ananas.jfif
+│       apropos.jpg
+│       aproposdenous.jpg
+│       Attieke.jpg
+│       cartographie.png
+│       hero.jfif
+│       hero1.jfif
+│       igname.jpg
+│       logo.png
+│       mais.jfif
+│       mais2.jpg
+│       manioc.jfif
+│       membre1.jpg
+│       membre2.jpg
+│       membre3.jpg
+│       membre4.jpg
+│       piment.jpg
+│       recoltemaÏs.jfif
+│       transformé.jfif
+│
+└───js
+        mdsombre.js
+        script.js
 
 ---
 
