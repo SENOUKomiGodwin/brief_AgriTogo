@@ -8,6 +8,7 @@
     <script>try{var theme=localStorage.getItem("theme")}catch(e){}document.documentElement.dataset.theme=theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");</script>
     <script defer src="js/mdsombre.js"></script>  <!-- Script du mode sombre/clair, chargé en différé -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">  <!-- Icônes Font Awesome -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/style.css">  <!-- Feuille de style principale du site -->
 </head>
 
@@ -109,22 +110,22 @@
         <div class="valeurs-grid">  <!-- Grille responsive des valeurs -->
 
             <div class="valeur">  <!-- Carte d'une valeur -->
-                <h3>🤝 Solidarité</h3>  <!-- Nom de la valeur -->
+                <h3> <span class="material-symbols-outlined">handshake</span>Solidarité</h3>  <!-- Nom de la valeur -->
                 <p>Solidarité et entraide entre producteurs.</p>  <!-- Description -->
             </div>
 
             <div class="valeur">
-                <h3>🌱 Environnement</h3>
+                <h3> <span class="material-symbols-outlined">potted_plant</span>Environnement</h3>
                 <p>Respect de l'environnement.</p>
             </div>
 
             <div class="valeur">
-                <h3>⚖️ Transparence</h3>
+                <h3><span class="material-symbols-outlined">balance</span>Transparence</h3>
                 <p>Transparence et équité.</p>
             </div>
 
             <div class="valeur">
-                <h3>⭐ Qualité</h3>
+                <h3><span class="material-symbols-outlined">bolt</span>Qualité</h3>
                 <p>Qualité et engagement.</p>
             </div>
 
@@ -178,15 +179,14 @@
 
     </section>
 
-</main>
 
-<!-- ================= PIED DE PAGE (FOOTER) ================= -->
+    <!-- Pied de page : carte et régions d'action -->
 
-<footer>  <!-- Pied de page : carte et régions d'action -->
+    <section class="cartographie">
 
-    <div class="footer-map">  <!-- Bloc contenant la carte -->
+    <div class="cartographie-map">  <!-- Bloc contenant la carte -->
 
-        <img src="image/cartographie.png" alt="Carte du Togo">  <!-- Image de la carte -->
+        <img src="image/cartographie.png" alt="Carte du Togo" >  <!-- Image de la carte -->
 
     </div>
 
@@ -209,8 +209,69 @@
         </p>
 
     </div>
+</section><br>
 
-</footer>
+
+
+</main>
+
+
+
+        <footer>  <!-- Pied de page avec le logo et les liens -->
+
+        <div class="footer-logo">  <!-- Bloc logo et slogan -->
+
+            <a href="index.html">
+                <img src="image/logo.png" alt="AgriTogo Logo">
+            </a>
+
+            <p>  <!-- Slogan de la coopérative -->
+                Ensemble cultivons un avenir durable et prospère
+                pour les générations futures.
+            </p>
+
+        </div>
+
+        <div class="footer-links">  <!-- Colonne de liens rapides -->
+
+            <h3>Liens rapides</h3>  <!-- Titre de la colonne -->
+
+            <ul>  <!-- Liste des liens rapides -->
+                <li><a href="index.html">Accueil</a></li>  <!-- Lien : accueil -->
+                <li><a href="Apropos.html">À propos</a></li>  <!-- Lien : à propos -->
+                <li><a href="NosProduits.html">Nos produits</a></li>  <!-- Lien : produits -->
+                <li><a href="Actualités.html">Actualités</a></li>  <!-- Lien : actualités -->
+                <li><a href="Contact.html">Contact</a></li>  <!-- Lien : contact -->
+            </ul>
+
+        </div>
+
+        <div class="footer-links">  <!-- Colonne des produits -->
+
+            <h3>Nos produits</h3>  <!-- Titre de la colonne -->
+
+            <ul>  <!-- Liste des produits -->
+                <li><a href="NosProduits.html">Maïs</a></li>  <!-- Lien : maïs -->
+                <li><a href="NosProduits.html">Manioc</a></li>  <!-- Lien : manioc -->
+                <li><a href="NosProduits.html">Ananas</a></li>  <!-- Lien : ananas -->
+                <li><a href="NosProduits.html">Produits transformés</a></li>  <!-- Lien : produits transformés -->
+            </ul>
+
+        </div>
+
+        <div class="footer-links">  <!-- Colonne des coordonnées -->
+
+            <h3>Nous trouver</h3>  <!-- Titre de la colonne -->
+
+            <ul>  <!-- Liste des coordonnées -->
+                <li>Kara, Haho & Plateaux - Togo</li>  <!-- Localisation -->
+                <li>+228 90 00 00 00</li>  <!-- Téléphone -->
+                <li>contact@agri-togo.tg</li>  <!-- E-mail -->
+            </ul>
+
+        </div>
+
+    </footer>
     <script src="js/script.js"></script>  <!-- Script principal (menu mobile) -->
 </body>
 </html>

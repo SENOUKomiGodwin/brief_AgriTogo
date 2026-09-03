@@ -120,7 +120,7 @@ header {  /* Barre de navigation principale */
 }
 
 .logo img {  /* Image du logo */
-    height: 45px;  /* Hauteur fixe du logo */
+    height: 85px;  /* Hauteur fixe du logo */
 }
 
 .nav-links ul {  /* Liste des liens du menu */
@@ -416,10 +416,24 @@ margin: 20px auto;  /* Centrée horizontalement */
     text-align: center;                      /* Contenu centré */
 }
 
+.valeurs h2 {  /* Icône de la valeur */
+    font-size: 2.2rem;  /* Très grande taille */
+    margin-bottom: 15px;  /* Espace sous l'icône */
+    color: var(--primary-color);  /* Couleur verte */
+    text-align: center;  /* Icône centrée */
+}
+
 .valeur h3 {  /* Nom de la valeur */
     margin-bottom: 10px;        /* Espace sous le titre */
     color: var(--primary-color);  /* Couleur verte */
 }
+
+.valeur h3 span {  /* Icône de la valeur */
+    font-size: 2.2rem;  /* Très grande taille */
+    margin-right: 8px;  /* Espace entre l'icône et le texte */
+    vertical-align: middle;  /* Aligne l'icône avec le texte */
+}
+
 
 /* Section des membres / producteurs */
 .membres {  /* Section des membres */
@@ -533,7 +547,7 @@ footer {  /* Pied de page */
     gap: 40px;                      /* Espacement entre les colonnes */
 }
 
-.footer-logo, .footer-links, .footer-map, .footer-region, .footer-column {  /* Colonnes du pied de page */
+.footer-logo, .footer-links, .footer-region, .footer-column {  /* Colonnes du pied de page */
     flex: 1;          /* Chaque colonne occupe la même largeur */
     min-width: 220px; /* Largeur minimale des colonnes */
 }
@@ -748,3 +762,29 @@ footer ul li a:hover {  /* Au survol d'un lien du pied de page */
     background-color: #81c784;  /* Fond vert clair */
     color: #121a13;             /* Icône sombre */
 }
+
+
+
+.cartographie {  /* Pied de page */
+    background-color: #113813;      /* Fond vert très foncé */
+    color: #ffffff;                 /* Texte blanc */
+    padding: 30px 2% 10px 2%;       /* Espacement interne */
+    display: flex;                  /* Disposition en ligne */
+    flex-wrap: wrap;                /* Les colonnes passent à la ligne si besoin */
+    justify-content: space-between; /* Colonnes réparties sur la largeur */
+    gap: 20px;                      /* Espacement entre les colonnes */
+}
+
+.cartographie h3 {  /* Titres des colonnes du pied de page */
+    color: var(--accent-color);  /* Couleur jaune / or */
+    margin-bottom: 20px;         /* Espace sous le titre */
+    font-size: 1.2rem;           /* Taille du titre */
+}
+
+.cartographie-map {  /* Carte interactive */
+    flex: 1;          /* Chaque colonne occupe la même largeur */
+    min-width: 200px; /* Largeur minimale des colonnes */
+    max-width: 300px; /* Largeur maximale de la carte */
+}
+
+
